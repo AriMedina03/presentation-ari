@@ -1,0 +1,125 @@
+.sairs-container{
+    padding: 40px;
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenedor */
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.sairs-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.sarirs-content{
+    display: flex;
+    align-items: center;
+}
+.sairs-text{
+    flex: 1;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.sairs-image{
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: 0;
+    margin-right: 20px; /* Margen derecho para separar las imágenes */
+    margin-bottom: 20px; /* Margen inferior para separar las imágenes */
+}
+.smalc-container {
+    display: flex; /* Make the container a flexbox */
+    flex-direction: column; /* Ensure child elements stack vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 40px;
+    background-color: #ebb6abc8; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%;
+    margin: 3rem auto; /* Center the container horizontally with a top margin */
+}
+.one-image{
+    display: flex;
+    flex-direction: column;  /* Align child elements in a row */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; 
+    margin-left: 20px; /* Right margin to separate the images */
+}
+.women-logo{
+    display: flex;
+    flex-direction: column;  /* Align child elements in a row */
+    align-items: center;
+    width: 100px;
+    height: 200px;
+    margin-bottom: 20px; 
+    margin-left: 20px; /* Right margin to separate the images */
+}
+
+.smalc-content {
+    display: flex;
+    flex-direction: row; /* Align child elements in a row */
+    align-items: center;
+    width: 75%;
+    margin-bottom: 20px; 
+    margin-left: 20px; /* Right margin to separate the images */
+}
+.smalc-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.smalc-text {
+    flex: 2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    margin-bottom: 1.5rem;  
+}
+.smalc-image {
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: 0;
+    margin-right: 20px; /* Right margin to separate the images */
+    margin-bottom: 20px; /* Bottom margin to separate the images */
+}
+.women-image{
+    width: 400px; /* Adjust the width as needed */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: 0;
+    margin-right: 20px; /* Right margin to separate the images */
+    margin-bottom: 20px; /* Bottom margin to separate the images */
+    margin-top: 20px; /* Top margin to separate the images */
+}
+.smalc-container:hover {
+    background-color: #e9aca0; /* Background color */
+    border-bottom: 1rem solid #e9aca0;
+    border-top: 1rem solid #e9aca0;
+    transition: all 0.3s ease;
+}
+.women-container{
+    display: flex; /* Make the container a flexbox */
+    flex-direction: column; /* Ensure child elements stack vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 40px;
+    background-color: #e1179085; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%;
+    margin: 3rem auto; /* Center the container horizontally with a top margin */
+}
+.women-container:hover {
+    background-color: #e11790d0; /* Background color */
+    border-bottom: 1rem solid #e11790d0;
+    border-top: 1rem solid #e11790d0;
+    transition: all 0.3s ease;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';  
+import Navbar from './component/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './component/pages/Home';
+import VantTec from './component/pages/VantTec';
+import SAIRS from './component/pages/SAIRS';
+import Hobbies from './component/pages/Hobbies';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' exact Component={Home} />
+        <Route path='/VantTec' exact Component={VantTec} /> 
+        <Route path='/SAIRS' exact Component={SAIRS} />
+        <Route path='/Hobbies' exact Component={Hobbies} />
+      </Routes>
+    </Router>
+    </>
   );
 }
-
 export default App;

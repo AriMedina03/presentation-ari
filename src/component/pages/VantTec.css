@@ -1,0 +1,100 @@
+.VantTec-container {
+  padding: 40px;
+  background-color: #709bc94e; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 100%;
+  margin: 0 auto; /* Centrar el contenedor */
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.VantTec-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.VantTec-content {
+  display: flex;
+  align-items: center;
+} 
+
+.VantTec-text {
+  flex: 1;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.VantTec-image {
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin: 0;
+  margin-right: 20px; /* Margen derecho para separar las imágenes */
+  margin-bottom: 20px; /* Margen inferior para separar las imágenes */
+}
+
+.VantTec-drones-content {
+  display: flex; /* Make the container a flexbox */
+  flex-direction: column; /* Ensure child elements stack vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 40px;
+  background-color: #709bc94e; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  width: 80%;
+  margin: 3rem auto; /* Center the container horizontally with a top margin*/
+}
+.VantTec-drones-content:hover {
+  background-color: #709bc9; /* Background color */
+  border-bottom: 4px solid #709bc97f;
+}
+
+.VantTec-drones-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.VantTec-drones-text {
+  flex: 1;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.VantTec-drones-image {
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+  margin-right: 20px; 
+  margin-bottom: 1.5rem;
+}
+
+.VantTec-video-container {
+  display: flex; /* Make the container a flexbox */
+  flex-direction: column; /* Ensure child elements stack vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Max width */
+  margin: 20px auto; /* Centers the video and adds some space above and below */
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.VantTec-video {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+.VantTec-video {
+    width: 80%; 
+}
+}
