@@ -31,7 +31,7 @@ function VantTec() {
                 </ul>
                 <ul className="cards__items">
                     <CardItem
-                        src='/images/ROS.png'
+                        src='/images/ROS.PNG'
                         text='Controlled with ROS2 installed in Docker containers'
                     />
                     <CardItem
@@ -39,7 +39,7 @@ function VantTec() {
                         text='Developed with PX4 flight control software and communicates with Mavlink messages'
                     />
                     <CardItem
-                        src='/images/qgro.png'
+                        src='/images/qgro.PNG'
                         text='All simulated in QGroundControl'
                     />
                 </ul>
