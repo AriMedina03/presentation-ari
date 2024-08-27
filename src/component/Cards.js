@@ -27,6 +27,7 @@ function Cards() {
                         src={"/images/flip-drones.MP4"} autoPlay loop muted 
                         text='Drone swarm with TelloPy'
                         label='School proyect'
+                        link="https://github.com/AriMedina03/TELLO_SWARM/tree/main"
                     />
                     <CardItem
                         src={"/images/fpga.mov"} autoPlay loop muted 

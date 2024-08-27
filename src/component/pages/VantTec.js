@@ -29,7 +29,7 @@ function VantTec() {
                         label='First simulation'
                     />
                 </ul>
-                <ul className="cards__items">
+                <ul className="cards__items"> 
                     <CardItem
                         src='/images/ROS.PNG'
                         text='Controlled with ROS2 installed in Docker containers'
