@@ -33,16 +33,19 @@ function Cards() {
                         src={"/images/fpga.mov"} autoPlay loop muted 
                         text='FPGA game in Verilog'
                         label='School proyect'
+                        link="https://github.com/AriMedina03/FPGA_car_unity"
                    />
                     <CardItem
                         src={"/images/xarm.mov"} autoPlay loop muted 
                         text='X-Arm with ROS and OpenCV'
                         label='School proyect'
+                        link="https://github.com/AriMedina03/Xarm-move"
                    />
                     <CardItem
                         src={"/images/puzzlebot.MOV"} autoPlay loop muted 
                         text='Puzzlebot with ROS2 and Machine Learning'
                         label='School proyect'
+                        link="https://github.com/rllaguno/robotica_inteligente_eq5"
                     />
                 </ul>
             </div>
