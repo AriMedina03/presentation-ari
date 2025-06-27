@@ -21,6 +21,12 @@ function Cards() {
                         label='SMALC program'
                         path='/SAIRS'
                     />
+                    <CardItem
+                        src='/images/tmr_uav.jpeg'
+                        text='VantTec Competitions'
+                        label='Torneo Mexicano de Robótica'
+                        path='/VantTec'
+                    />
                 </ul>
                 <ul className="cards__items">
                     <CardItem
