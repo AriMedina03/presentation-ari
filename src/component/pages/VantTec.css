@@ -1,9 +1,9 @@
 .VantTec-container {
-  padding: 40px;
-  background-color: #709bc94e; /* Color de fondo */
+  padding: 10px;
+  background-color: #ffffff; /* Color de fondo */
   border-radius: 10px; /* Bordes redondeados */
   width: 100%;
-  margin: 0 auto; /* Centrar el contenedor */
+  margin: 0 auto;
   margin-top: 3rem;
   justify-content: center;
   align-items: center;
@@ -65,13 +65,22 @@
   margin-right: 20px;
 }
 
-.VantTec-drones-image {
-  width: 400px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for the image */
-  margin-right: 20px; 
-  margin-bottom: 1.5rem;
+.VantTec-drones-images {
+  display: flex;
+  gap: 20px; /* espacio entre imágenes */
+  justify-content: center;
+  flex-wrap: wrap; /* por si la pantalla es muy pequeña */
+  margin: 20px 0;
 }
+
+.VantTec-drones-image {
+  width: 300px; /* o el tamaño que prefieras */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
 
 .VantTec-video-container {
   display: flex; /* Make the container a flexbox */
@@ -79,22 +88,56 @@
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
   width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
   max-width: 600px; /* Max width */
   margin: 20px auto; /* Centers the video and adds some space above and below */
   padding: 20px;
-  background-color: #f0f0f0; /* Light background for contrast */
+  background-color: #f1f4f4ba; /* Light background for contrast */
   border-radius: 10px; /* Rounded corners */
 }
 
 .VantTec-video {
-  width: 100%; /* Full width of the container */
-  max-width: 600px; /* Max width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  background-color: black; /* Por si el video no carga, se ve el espacio */
+}
+.VantTec-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+  align-items: center;
 }
 
-@media (min-width: 768px) {
-.VantTec-video {
-    width: 80%; 
+.VantTec-link {
+  display: flex;
+  flex-direction: column-reverse;  /* imagen arriba, texto abajo */
+  align-items: center;
+  gap: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-align: center;
 }
+
+.VantTec-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
+
+.VantTec-link-icon {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  margin-top: 10px;
+}
+.VantTec-link-text {
+  font-size: 1.5rem;  /* texto más grande */
+  font-weight: bold;
+}
+
+
+
