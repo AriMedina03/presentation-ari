@@ -9,7 +9,7 @@ function Hobbies() {
     <div className="hobbies-container">
       <h1 className="Hobbies-title">ABOUT ME</h1>
       <div className="hobbies-content">
-        <p className="hobbies-text">HI! My name is Ariadna Medina, I'm currently in the last year of my Robotics and Systems Engineering degree. I hope you enjoy looking through all my proyects</p>
+        <p className="hobbies-text">HI! My name is Ariadna Medina, I'm currently in the last year of my Robotics and Systems Engineering degree. I hope you enjoy looking through all my projects</p>
         <img className="hobbies-image" src="/images/YOYOY.jpeg" alt="Hobby" />
       </div>  
       <div className="carousel-container">

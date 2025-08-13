@@ -3,7 +3,6 @@ import '../../App.css'
 import './VantTec.css'
 import '../Cards.css'
 import CardItem from '../CardItem'
-import { Link } from 'react-router-dom';
 
 
 function VantTec() {
@@ -13,7 +12,7 @@ function VantTec() {
         <div className="VantTec-content">
             <p className="VantTec-text">VantTec Student-led group, recognized for its award-wining in academics at international robotics
                 competitions, dedicated to conducting research on autonomous vehicles and fostering entrepreneurial collaborations. 
-                I am deeply honored to have such an incredible team making all drone proyects possible </p>
+            I am deeply honored to have such an incredible team making all drone projects possible </p>
             <img className="VantTec-image" src="/images/wabes_tmr.jpeg" alt="VantTec" />
         </div>
         <div className ="VantTec-drones-content">

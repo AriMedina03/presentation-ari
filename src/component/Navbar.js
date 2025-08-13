@@ -55,10 +55,17 @@ function Navbar() {
             </li>
             <li className="nav-item">
                 <Link to='/Hobbies' className="nav-links" onClick={closeMobileMenu}>
+                    School projects
+                    {/* sign-up */}
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to='/Hobbies' className="nav-links" onClick={closeMobileMenu}>
                     About me
                     {/* sign-up */}
                 </Link>
             </li>
+            
         </ul>
         {botton && <Botton buttonStyke='btn-outline' link = "https://github.com/AriMedina03">GITHUB</Botton>}
     </div> 

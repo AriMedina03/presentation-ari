@@ -31,7 +31,7 @@ function SAIRS() {
         <div className='women-container'>
             <h2 className='smalc-title'>WOMEN 2 CONNECT</h2>
             <p className='smalc-text'>Fostering the ascendance of women in STEM by transformative dialogues and
-            networking women in FRC Competition with distinguished woman in STEM. The proyect women to connect attends to inspire and support women in STEM field
+            networking women in FRC Competition with distinguished woman in STEM. The project women to connect attends to inspire and support women in STEM field
             by giving mentorship, a strong community, and fostering a community that encourages growth and innovation in science</p>
             <div className='women-logo'>
                 <img className='sairs-image' src= "/images/women_logo.jpg" alt="SAIRS" />
