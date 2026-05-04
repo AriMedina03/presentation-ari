@@ -6,6 +6,7 @@ import Home from './component/pages/Home';
 import VantTec from './component/pages/VantTec';
 import SAIRS from './component/pages/SAIRS';
 import Hobbies from './component/pages/Hobbies';
+import School from './component/pages/school';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/VantTec' exact Component={VantTec} /> 
         <Route path='/SAIRS' exact Component={SAIRS} />
         <Route path='/Hobbies' exact Component={Hobbies} />
+        <Route path='/School' exact Component={School} />
       </Routes>
     </Router>
     </>

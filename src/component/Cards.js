@@ -28,7 +28,7 @@ function Cards() {
                             src='/images/design_puzzlebt.jpeg' autoPlay loop muted
                             text='Puzzlebot with ROS2, SLAM and obstacle avoidance'
                             label='School project'
-                            // path='/VantTec'
+                            path='/School'
                         />
                     <CardItem
                         src='/images/SMALC2.jpeg'

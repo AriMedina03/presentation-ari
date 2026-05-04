@@ -1,99 +1,119 @@
-/* school.css */
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Container */
 .school-container {
+    padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+.school-title {
     text-align: center;
-}
-
-header h1 {
+    margin-bottom: 3rem;
     font-size: 2.5rem;
 }
 
-/* school Section */
-.school-section {
-    margin: 40px 0;
+/* Sección de arriba: texto a la izquierda, imagen a la derecha */
+.school-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
 }
 
-.school-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4CAF50;
+.school-description {
+    flex: 1;
 }
 
-.school-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.school-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
-.school-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.school-image-wrapper {
+    flex: 1;
 }
 
-.school-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.school-card img {
+.school-image {
     width: 100%;
-    height: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+/* Tarjetas en fila */
+.school__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* En móvil, apilar todo verticalmente */
+@media screen and (max-width: 768px) {
+    .school-content {
+        flex-direction: column;
+    }
+    
+    .school__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* === Tarjetas más grandes en la sección School === */
+
+/* Tamaño de cada tarjeta: 2 por fila */
+.school__cards .cards__item {
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+    min-width: 400px;
+    margin: 0;  /* por si Cards.css le mete margen */
+}
+
+/* La imagen/video llena toda la tarjeta */
+.school__cards .cards__item__pic-wrap {
+    width: 100%;
+    padding-top: 60%;  /* ratio 5:3, ajusta a gusto */
+    position: relative;
+    overflow: hidden;
+}
+
+.school__cards .cards__item__img,
+.school__cards .cards__item__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
-.school-card .content {
-    padding: 15px;
+/* Texto un poco más grande también */
+.school__cards .cards__item__text {
+    font-size: 1.1rem;
+    padding: 1rem;
 }
 
-.school-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Móvil: una tarjeta por fila */
+@media screen and (max-width: 768px) {
+    .school__cards .cards__item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: unset;
+    }
 }
 
-.school-card p {
-    font-size: 1rem;
-    color: #666;
+.school__cards .cards__item:nth-child(3) {
+    flex: 1 1 100%;
+    /* max-width: 100%; */
+    max-width: 400px;  
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: white;
-}
-
-footer p {
-    font-size: 0.9rem;
+.school__cards .cards__item:nth-child(3) .cards__item__pic-wrap {
+    /* padding-top: 50%; */
+    padding-top: 140%; 
 }

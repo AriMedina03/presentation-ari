@@ -10,9 +10,8 @@ function VantTec() {
     <div className="VantTec-container">
         <h1 className="VantTec-title">VANTTEC</h1>
         <div className="VantTec-content">
-            <p className="VantTec-text">VantTec Student-led group, recognized for its award-wining in academics at international robotics
-                competitions, dedicated to conducting research on autonomous vehicles and fostering entrepreneurial collaborations. 
-            I am deeply honored to have such an incredible team making all drone projects possible </p>
+            <p className="VantTec-text">VantTec is a student-led team dedicated to autonomous vehicle research and participating in international robotics competitions. 
+                Being part of this team has been one of the most rewarding experiences of my career, every drone project we build is the result of incredible teamwork. </p>
             <img className="VantTec-image" src="/images/wabes_tmr.jpeg" alt="VantTec" />
         </div>
         <div className ="VantTec-drones-content">
