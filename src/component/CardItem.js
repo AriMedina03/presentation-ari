@@ -23,7 +23,7 @@ function CardItem(props) {
             ) : (
               <img
                 className='cards__item__img'
-                alt='Project Image'
+                alt='Project'
                 src={props.src}
               />
             )}

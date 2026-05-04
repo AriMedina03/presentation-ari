@@ -2,7 +2,6 @@ import React from 'react'
 import '../../App.css'
 import './SAIRS.css'
 import '../Cards.css'
-import CardItem from '../CardItem'
 
 function SAIRS() {
     return (
