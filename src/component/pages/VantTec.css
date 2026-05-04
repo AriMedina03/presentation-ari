@@ -1,16 +1,20 @@
 .VantTec-container {
   padding: 10px;
-  background-color: #ffffff; /* Color de fondo */
-  border-radius: 10px; /* Bordes redondeados */
-  width: 100%;
+  background-color: var(--color-bg, #FAF7F2); /* crema cálido */
+  border-radius: 10px;
+  max-width: 1400px;
   margin: 0 auto;
-  margin-top: 3rem;
   justify-content: center;
   align-items: center;
 }
 
 .VantTec-title {
   text-align: center;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-text, #2D2520);
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -18,85 +22,141 @@
 .VantTec-content {
   display: flex;
   align-items: center;
-} 
+}
 
 .VantTec-text {
   flex: 1;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-text-soft, #6B5D54);
   margin-right: 40px;
   margin-left: 70px;
 }
 
+.vanttec-role {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-green, #6B8E5A);
+    margin-top: -10px;
+    margin-bottom: 2.5rem;
+}
+
+.vanttec-role-card {
+    background: #FFFFFF;
+    border-left: 4px solid var(--color-green, #6B8E5A);
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(45, 37, 32, 0.08);
+}
+
+.vanttec-role-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-green, #6B8E5A);
+}
+
+.vanttec-role-title {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color-text, #2D2520);
+    margin: 0.5rem 0;
+}
+
+.vanttec-role-period {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-accent, #6B8E5A);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
 .VantTec-image {
-  width: 400px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners for the image */
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
   margin: 0;
-  margin-right: 250px; /* Margen derecho para separar las imágenes */
-  margin-bottom: 20px; /* Margen inferior para separar las imágenes */
-  margin-left: 30px; /* Left margin to separate the images */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para dar profundidad */
+  margin-right: 250px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  box-shadow: 0 4px 12px rgba(45, 37, 32, 0.12); /* sombra café cálida */
 }
 
 .VantTec-drones-content {
-  display: flex; /* Make the container a flexbox */
-  flex-direction: column; /* Ensure child elements stack vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
-  background-color: #709bc94e; /* Background color */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #EDE4D3; /* beige más profundo, mismo tono familia */
+  border-radius: 10px;
   width: 80%;
-  margin: 3rem auto; /* Center the container horizontally with a top margin*/
+  margin: 3rem auto;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
 }
+
 .VantTec-drones-content:hover {
-  background-color: #709bc9; /* Background color */
-  border-bottom: 4px solid #709bc97f;
+  background-color: #DDD0B8; /* beige un poco más oscuro al hover */
+  border-bottom: 4px solid var(--color-accent, #8B6F47); /* caramelo */
 }
 
 .VantTec-drones-title {
   text-align: center;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-text, #2D2520);
   font-size: 2rem;
   margin-bottom: 5px;
 }
 
 .VantTec-drones-text {
   flex: 1;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--color-text, #2D2520);
   margin-right: 20px;
 }
 
 .VantTec-drones-images {
   display: flex;
-  gap: 20px; /* espacio entre imágenes */
+  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap; /* por si la pantalla es muy pequeña */
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
 .VantTec-drones-image {
-  width: 300px; /* o el tamaño que prefieras */
+  width: 300px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(45, 37, 32, 0.12);
   object-fit: cover;
 }
 
-
 .VantTec-video-container {
-  display: flex; /* Make the container a flexbox */
-  flex-direction: column; /* Ensure child elements stack vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  width: 100%; /* Full width of the container */
-  height: 100%; /* Full height of the container */
-  max-width: 600px; /* Max width */
-  margin: 20px auto; /* Centers the video and adds some space above and below */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
-  background-color: #f1f4f4ba; /* Light background for contrast */
-  border-radius: 10px; /* Rounded corners */
+  background-color: #F5EFE4; /* crema un poquito más oscuro */
+  border-radius: 10px;
 }
 
 .VantTec-video {
@@ -104,8 +164,9 @@
   max-width: 400px;
   height: auto;
   display: block;
-  background-color: black; /* Por si el video no carga, se ve el espacio */
+  background-color: #2D2520; /* café oscuro en lugar de negro puro */
 }
+
 .VantTec-links {
   display: flex;
   flex-direction: column;
@@ -116,18 +177,19 @@
 
 .VantTec-link {
   display: flex;
-  flex-direction: column-reverse;  /* imagen arriba, texto abajo */
+  flex-direction: column-reverse;
   align-items: center;
   gap: 10px;
-  color: #007bff;
+  color: var(--color-accent, #8B6F47); /* caramelo en lugar de azul */
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   transition: color 0.3s ease;
   text-align: center;
 }
 
 .VantTec-link:hover {
-  color: #0056b3;
+  color: var(--color-text, #2D2520); /* café oscuro al hover */
   text-decoration: underline;
 }
 
@@ -136,11 +198,12 @@
   height: 80%;
   object-fit: contain;
   margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(45, 37, 32, 0.12);
 }
+
 .VantTec-link-text {
-  font-size: 1.5rem;  /* texto más grande */
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
-
-
-

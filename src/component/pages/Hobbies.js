@@ -13,7 +13,7 @@ function Hobbies() {
         <img className="hobbies-image" src="/images/YOYOY.jpeg" alt="Hobby" />
       </div>  
       <div className="carousel-container">
-        <h1 className="carousel-title">Here are some hobbies</h1>
+        <h1 className="Hobbies-title">Here are some hobbies</h1>
         <Carousel
           data={[
             {
@@ -42,7 +42,7 @@ function Hobbies() {
             }
           ]}
         />
-        <p className="carousel-text">I love climbing, running, spending time with my family, friends and my dog</p>
+        <p className="hobbies-text">I love climbing, running, spending time with my family, friends and my dog</p>
       </div>
     </div>
   );

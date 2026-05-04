@@ -9,11 +9,17 @@ function VantTec() {
     return (
     <div className="VantTec-container">
         <h1 className="VantTec-title">VANTTEC</h1>
+        <div className="vanttec-role-card">
+            <span className="vanttec-role-label">My Role</span>
+            <h3 className="vanttec-role-title">Team Leader</h3>
+            <p className="vanttec-role-period">2022 – 2025 · Three years building and leading the drone delivery team</p>
+        </div>
         <div className="VantTec-content">
             <p className="VantTec-text">VantTec is a student-led team dedicated to autonomous vehicle research and participating in international robotics competitions. 
                 Being part of this team has been one of the most rewarding experiences of my career, every drone project we build is the result of incredible teamwork. </p>
             <img className="VantTec-image" src="/images/wabes_tmr.jpeg" alt="VantTec" />
         </div>
+        
         <div className ="VantTec-drones-content">
             <h2 className="VantTec-drones-title">Drones</h2>
             <p className="VantTec-drones-text">We design from scratch two drones</p>

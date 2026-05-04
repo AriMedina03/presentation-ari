@@ -19,7 +19,17 @@ function CardItem(props) {
         <WrapperTag className='cards__item__link' {...linkProps}>
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             {isVideo ? (
-              <video className='cards__item__video' src={props.src} autoPlay loop muted />
+              // <video className='cards__item__video' src={props.src} autoPlay loop muted />
+
+              <video 
+                className='cards__item__video' 
+                src={props.src} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                preload="auto"
+              />
             ) : (
               <img
                 className='cards__item__img'

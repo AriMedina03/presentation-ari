@@ -5,7 +5,7 @@ import './Cards.css'
 function Cards() {
   return (
     <div className='cards'>
-        <h1>My projects</h1>
+        <h1>Welcome to my projects</h1>
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
@@ -41,25 +41,25 @@ function Cards() {
 
                 <ul className="cards__items">
                     <CardItem
-                        src={"/images/flip-drones.MP4"} autoPlay loop muted 
+                        src={"/images/flip-drones.MP4"}
                         text='Drone swarm with TelloPy'
                         label='School project'
                         link="https://github.com/AriMedina03/TELLO_SWARM/tree/main"
                     />
                     <CardItem
-                        src={"/images/fpga.mov"} autoPlay loop muted 
+                        src={"/images/fpga.mov"}  
                         text='FPGA game in Verilog'
                         label='School project'
                         link="https://github.com/AriMedina03/FPGA_car_unity"
                    />
                     <CardItem
-                        src={"/images/xarm.mov"} autoPlay loop muted 
+                        src={"/images/xarm.mov"}  
                         text='X-Arm with ROS and OpenCV'
                         label='School project'
                         link="https://github.com/AriMedina03/Xarm-move"
                    />
                     <CardItem
-                        src={"/images/puzzlebot.MOV"} autoPlay loop muted 
+                        src={"/images/puzzlebot.MOV"}  
                         text='Puzzlebot with ROS2 and Machine Learning'
                         label='School project'
                         link="https://github.com/rllaguno/robotica_inteligente_eq5"

@@ -1,8 +1,8 @@
 import React,{useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { HiFingerPrint } from "react-icons/hi";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import './Navbar.css'   
-import { Botton } from './Botton';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -29,7 +29,7 @@ function Navbar() {
    <nav className="navbar"> 
     <div className="navbar-container"> 
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            ARIADNA MEDINA <HiFingerPrint size={30} color="white" />
+            ARIADNA MEDINA <HiFingerPrint size={28} className="navbar-icon" />
             
         </Link>
         <div className="menu-icon" onClick={handleClick}>
@@ -67,7 +67,38 @@ function Navbar() {
             </li>
             
         </ul>
-        {botton && <Botton buttonStyke='btn-outline' link = "https://github.com/AriMedina03">GITHUB</Botton>}
+        {botton && (
+            <div className="navbar-socials">
+                <a 
+                    href="https://github.com/AriMedina03" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="navbar-social"
+                    aria-label="GitHub"
+                >
+                    <FaGithub size={26} />
+                    <span>GitHub</span>
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/ariadna-medina/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="navbar-social"
+                    aria-label="LinkedIn"
+                >
+                    <FaLinkedin size={26} />
+                    <span>LinkedIn</span>
+                </a>
+                <a 
+                    href="mailto:arimedina.090@gmail.com" 
+                    className="navbar-social"
+                    aria-label="Email"
+                >
+                    <FaEnvelope size={26} />
+                    <span>Email</span>
+                </a>
+            </div>
+        )}
     </div> 
    </nav>
    </>

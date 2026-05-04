@@ -1,12 +1,18 @@
 .school-container {
     padding: 4rem 2rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    background-color: var(--color-bg, #FAF7F2); /* crema cálido */
 }
 
 .school-title {
     text-align: center;
     margin-bottom: 3rem;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-text, #2D2520);
     font-size: 2.5rem;
 }
 
@@ -23,6 +29,8 @@
 }
 
 .school-text {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-soft, #6B5D54);
     font-size: 1.1rem;
     line-height: 1.7;
 }
@@ -35,7 +43,7 @@
     width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(45, 37, 32, 0.15); /* sombra café cálida */
     display: block;
 }
 
@@ -70,13 +78,13 @@
     flex: 1 1 calc(50% - 1.5rem);
     max-width: calc(50% - 1.5rem);
     min-width: 400px;
-    margin: 0;  /* por si Cards.css le mete margen */
+    margin: 0;
 }
 
 /* La imagen/video llena toda la tarjeta */
 .school__cards .cards__item__pic-wrap {
     width: 100%;
-    padding-top: 60%;  /* ratio 5:3, ajusta a gusto */
+    padding-top: 60%;
     position: relative;
     overflow: hidden;
 }
@@ -94,6 +102,9 @@
 
 /* Texto un poco más grande también */
 .school__cards .cards__item__text {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    color: var(--color-text, #2D2520);
     font-size: 1.1rem;
     padding: 1rem;
 }
@@ -109,11 +120,9 @@
 
 .school__cards .cards__item:nth-child(3) {
     flex: 1 1 100%;
-    /* max-width: 100%; */
     max-width: 400px;  
 }
 
 .school__cards .cards__item:nth-child(3) .cards__item__pic-wrap {
-    /* padding-top: 50%; */
     padding-top: 140%; 
 }
