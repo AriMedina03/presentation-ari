@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './component/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './component/ScrollTopTop'; 
 import Home from './component/pages/Home';
 import VantTec from './component/pages/VantTec';
 import SAIRS from './component/pages/SAIRS';
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop />  
       <Navbar />
       <Routes>
         <Route path='/' exact Component={Home} />
