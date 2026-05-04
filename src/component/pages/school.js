@@ -33,17 +33,17 @@ function School() {
                         <CardItem
                             src='/images/nav.MOV'
                             text='A* Navigation'
-                            label='Robotics'
+                            label='Nav'
                         />
                         <CardItem
                             src='/images/nav2.MOV'
                             text='Bug 0 obstacle avoidance'
-                            label='Programming'
+                            label='Obstacle avoidance'
                         />
                         <CardItem
                             src='/images/palletMoving.mp4'
                             text='Lifting and moving pallets'
-                            label='Programming'
+                            label='Pallet moving'
                         />
                     </ul>
                 </div>
