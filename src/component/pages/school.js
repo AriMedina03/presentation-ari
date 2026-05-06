@@ -41,10 +41,17 @@ function School() {
                             label='Obstacle avoidance'
                         />
                         <CardItem
+                            src='/images/nav2Package.MOV'
+                            text='Simulation of the Nav2 package'
+                            label='Nav2 Package'
+                        />
+                        <CardItem
                             src='/images/palletMoving.mp4'
                             text='Lifting and moving pallets'
                             label='Pallet moving'
+                            customClass='card-vertical'
                         />
+                        
                     </ul>
                 </div>
             </div>

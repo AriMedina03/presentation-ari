@@ -118,11 +118,11 @@
     }
 }
 
-.school__cards .cards__item:nth-child(3) {
+.school__cards .cards__item.card-vertical{
     flex: 1 1 100%;
     max-width: 400px;  
 }
 
-.school__cards .cards__item:nth-child(3) .cards__item__pic-wrap {
+.school__cards .cards__item.card-vertical .cards__item__pic-wrap {
     padding-top: 140%; 
 }
